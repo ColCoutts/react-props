@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import propTypes from 'prop-types';
+import './style.css';
 
 export default class ColorPicker extends PureComponent {
   static propTypes = {
@@ -23,13 +24,11 @@ clickHandlerBlue = event => {
 
   render() {
     return (
-      <div> 
-        <button onClick={this.clickHandlerRed}>{this.props.color[0]}</button>
-        <button onClick={this.clickHandlerBlue}>{this.props.color[1]}</button>
-        <button onClick={this.clickHandlerGreen}>{this.props.color[2]}</button>
-      </div>
+      <> 
+        <button className="red" onClick={this.clickHandlerRed}>{this.props.color[0]}</button>
+        <button className="blue" onClick={this.clickHandlerBlue}>{this.props.color[1]}</button>
+        <button className="green" onClick={this.clickHandlerGreen}>{this.props.color[2]}</button>
+      </>
     );
   }
-
-
 }
