@@ -5,7 +5,7 @@ function Color({ name, hex, red, green, blue }) {
   return (
     <dl>
       <dt>Name</dt>
-      <dd>{name ? name : hex}</dd>
+      <dd>{name ? name : hex}<img id="color-block" src="https://www.colorhexa.com/9400d3.png"></img></dd>
 
       <dt>Hex</dt>
       <dd>{hex}</dd>
