@@ -4,7 +4,7 @@ import styles from './style.modules.css';
 
 export default class ColorPicker extends PureComponent {
   static propTypes = {
-    //ask questions about array isRequired and undefined
+    //ask questions about array isRequired and undefined//
     color: propTypes.array
   }
 
