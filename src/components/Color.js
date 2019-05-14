@@ -2,10 +2,16 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 function Color({ name, hex, red, green, blue }) {
+  const imgStyle = {
+    height: '20px',
+    width: '20px',
+    marginLeft: '5px'
+  };
+
   return (
     <dl>
       <dt>Name</dt>
-      <dd>{name ? name : hex}<img id="color-block" src="https://www.colorhexa.com/9400d3.png"></img></dd>
+      <dd>{name ? name : hex}<img style={imgStyle} src="https://www.colorhexa.com/9400d3.png"></img></dd>
 
       <dt>Hex</dt>
       <dd>{hex}</dd>
