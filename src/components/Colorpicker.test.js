@@ -4,7 +4,7 @@ import ColorPicker from './ColorPicker';
 
 describe('Snapshot tests', () => {
   it('colorpicker snapshot', () => {
-    const wrapper = shallow(<ColorPicker />);
+    const wrapper = shallow(<ColorPicker colors={['red', 'blue', 'green']} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -1,11 +1,10 @@
 import React, { PureComponent } from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './style.modules.css';
 
 export default class ColorPicker extends PureComponent {
   static propTypes = {
-    //ask questions about array isRequired and undefined//
-    colors: propTypes.array.isRequired
+    colors: PropTypes.array.isRequired
   }
 
   colors = ['red', 'blue', 'green'];
