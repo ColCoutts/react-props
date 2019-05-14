@@ -5,21 +5,21 @@ import styles from './style.modules.css';
 export default class ColorPicker extends PureComponent {
   static propTypes = {
     //ask questions about array isRequired and undefined//
-    color: propTypes.array
+    colors: propTypes.array.isRequired
   }
 
   colors = ['red', 'blue', 'green'];
 
 clickHandlerRed = () => {
-  console.log(this.colors[0]);
+  console.log(this.props.colors[0]);
 }
 
 clickHandlerBlue = () => {
-  console.log(this.colors[1]);
+  console.log(this.props.colors[1]);
 }
 
 clickHandlerGreen = () => {
-  console.log(this.colors[2]);
+  console.log(this.props.colors[2]);
 }
 
 render() {

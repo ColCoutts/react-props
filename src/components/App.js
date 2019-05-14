@@ -3,6 +3,6 @@ import ColorPicker from './ColorPicker';
 
 export default function App() {
   return (
-    <ColorPicker color={['red', 'blue', 'green']} />
+    <ColorPicker colors={['red', 'blue', 'green']} />
   );
 }
